@@ -8,7 +8,7 @@ function search($integers){
     else{
         let evenResult = $integers.filter(el => el % 2 === 0);
         let oddResult = $integers.filter(el => el % 2 === 1)
-        return (evenResult.length ===1) ? evenResult: oddResult.length===1 ? oddResult:"Tablica nie posiada dokładnie 1 odmiennego elementu od reszty(parzystego lub nieparzystego)!";
+        return (evenResult.length ===1) ? evenResult[0]: oddResult.length===1 ? oddResult[0]:"Tablica nie posiada dokładnie 1 odmiennego elementu od reszty(parzystego lub nieparzystego)!";
     }
 
   }
